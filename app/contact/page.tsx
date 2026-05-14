@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Contact & Support — Bumbeez",
@@ -93,22 +94,31 @@ export default function ContactPage() {
         par une réclamation préalable écrite auprès de notre service client,
         vous pouvez saisir gratuitement le médiateur de la consommation :
       </p>
-      <p>
-        <strong>
-          CM2C (Centre de la Médiation de la Consommation de Conciliateurs de
-          Justice)
-        </strong>
-        <br />
-        49 Rue de Ponthieu, 75008 Paris
-        <br />
-        <a
-          href="https://www.cm2c.net"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          www.cm2c.net
-        </a>
-      </p>
+      <div className="my-4 flex items-start gap-4 rounded-xl border border-gray-100 bg-gray-50 p-4">
+        <Image
+          src="/partners/cm2c.png"
+          alt="CM2C — Centre de la Médiation de la Consommation de Conciliateurs de Justice"
+          width={127}
+          height={72}
+          className="shrink-0"
+        />
+        <p className="m-0">
+          <strong>
+            CM2C (Centre de la Médiation de la Consommation de Conciliateurs de
+            Justice)
+          </strong>
+          <br />
+          49 Rue de Ponthieu, 75008 Paris
+          <br />
+          <a
+            href="https://www.cm2c.net"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            www.cm2c.net
+          </a>
+        </p>
+      </div>
 
       <h2>Adresse postale</h2>
       <p>

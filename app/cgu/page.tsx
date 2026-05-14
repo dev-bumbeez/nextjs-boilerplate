@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Conditions Générales d'Utilisation et de Vente — Bumbeez",
@@ -34,14 +35,23 @@ export default function TermsPage() {
         En tant que tiers de confiance, BUMBEEZ intègre à chaque mise en
         relation une protection dédiée.
       </p>
-      <p>
-        Toutes les prestations réservées et payées via l&apos;Application
-        bénéficient d&apos;une couverture en Responsabilité Civile souscrite
-        auprès de notre partenaire AXA. Cette garantie protège les
-        Utilisateurs contre les conséquences financières des dommages
-        accidentels (matériels ou corporels) pouvant survenir durant
-        l&apos;exécution d&apos;un Service.
-      </p>
+      <div className="my-4 flex items-start gap-4 rounded-xl border border-gray-100 bg-gray-50 p-4">
+        <Image
+          src="/partners/axa.png"
+          alt="AXA"
+          width={80}
+          height={80}
+          className="shrink-0"
+        />
+        <p className="m-0">
+          Toutes les prestations réservées et payées via l&apos;Application
+          bénéficient d&apos;une couverture en Responsabilité Civile souscrite
+          auprès de notre partenaire AXA. Cette garantie protège les
+          Utilisateurs contre les conséquences financières des dommages
+          accidentels (matériels ou corporels) pouvant survenir durant
+          l&apos;exécution d&apos;un Service.
+        </p>
+      </div>
       <p>
         Les présentes Conditions générales régissent l&apos;utilisation de
         l&apos;Application et plus particulièrement l&apos;inscription de
@@ -882,23 +892,34 @@ export default function TermsPage() {
         gratuitement à un médiateur de la consommation en vue de la résolution
         amiable du litige qui l&apos;oppose à un professionnel.</em> »
       </p>
-      <p>
-        Pour faciliter la résolution des litiges de consommation, BUMBEEZ
-        adhère au service du médiateur du e-commerce du{" "}
-        <strong>CM2C (Centre de la Médiation de la Consommation de Conciliateurs de Justice)</strong>{" "}
-        dont les coordonnées sont les suivantes : 49 Rue de Ponthieu, 75008
-        Paris.
-      </p>
-      <p>
-        Pour plus d&apos;informations :{" "}
-        <a
-          href="https://www.cm2c.net"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          www.cm2c.net
-        </a>
-      </p>
+      <div className="my-4 flex items-start gap-4 rounded-xl border border-gray-100 bg-gray-50 p-4">
+        <Image
+          src="/partners/cm2c.png"
+          alt="CM2C — Centre de la Médiation de la Consommation de Conciliateurs de Justice"
+          width={127}
+          height={72}
+          className="shrink-0"
+        />
+        <div>
+          <p className="m-0">
+            Pour faciliter la résolution des litiges de consommation, BUMBEEZ
+            adhère au service du médiateur du e-commerce du{" "}
+            <strong>CM2C (Centre de la Médiation de la Consommation de Conciliateurs de Justice)</strong>{" "}
+            dont les coordonnées sont les suivantes : 49 Rue de Ponthieu, 75008
+            Paris.
+          </p>
+          <p className="m-0 mt-2">
+            Pour plus d&apos;informations :{" "}
+            <a
+              href="https://www.cm2c.net"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              www.cm2c.net
+            </a>
+          </p>
+        </div>
+      </div>
       <p>
         Pour les litiges transfrontaliers, l&apos;Utilisateur peut également se
         rapprocher du Centre européen des consommateurs :{" "}

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Mentions légales — Bumbeez",
@@ -160,25 +161,34 @@ export default function LegalNoticePage() {
           une réclamation préalable écrite auprès du service client de
           BUMBEEZ, l&apos;Utilisateur peut saisir gratuitement le médiateur de
           la consommation suivant :
-          <ul>
-            <li>
-              <strong>
-                CM2C (Centre de la Médiation de la Consommation de
-                Conciliateurs de Justice)
-              </strong>
-            </li>
-            <li>
-              Site internet :{" "}
-              <a
-                href="https://www.cm2c.net"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                https://www.cm2c.net
-              </a>
-            </li>
-            <li>Adresse postale : 14 rue Saint Jean, 75017 Paris</li>
-          </ul>
+          <div className="my-3 flex items-start gap-4 rounded-xl border border-gray-100 bg-gray-50 p-4">
+            <Image
+              src="/partners/cm2c.png"
+              alt="CM2C — Centre de la Médiation de la Consommation de Conciliateurs de Justice"
+              width={127}
+              height={72}
+              className="shrink-0"
+            />
+            <ul className="m-0">
+              <li>
+                <strong>
+                  CM2C (Centre de la Médiation de la Consommation de
+                  Conciliateurs de Justice)
+                </strong>
+              </li>
+              <li>
+                Site internet :{" "}
+                <a
+                  href="https://www.cm2c.net"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  https://www.cm2c.net
+                </a>
+              </li>
+              <li>Adresse postale : 14 rue Saint Jean, 75017 Paris</li>
+            </ul>
+          </div>
         </li>
       </ul>
       <p>

@@ -96,6 +96,44 @@ export default function RootLayout({
                 Mentions légales
               </Link>
             </div>
+            <div className="mb-4 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-gray-600">
+              <Link
+                href="/cgu"
+                className="inline-flex items-center gap-2 hover:text-gray-900"
+              >
+                <span>Assuré par</span>
+                <Image
+                  src="/partners/axa.png"
+                  alt="AXA"
+                  width={48}
+                  height={48}
+                />
+              </Link>
+              <Link
+                href="/mentions-legales"
+                className="inline-flex items-center gap-2 hover:text-gray-900"
+              >
+                <span>Médiation</span>
+                <Image
+                  src="/partners/cm2c.png"
+                  alt="CM2C"
+                  width={85}
+                  height={48}
+                />
+              </Link>
+              <Link
+                href="/cgu"
+                className="inline-flex items-center gap-2 hover:text-gray-900"
+              >
+                <span>Paiement sécurisé par</span>
+                <Image
+                  src="/partners/stripe.png"
+                  alt="Stripe"
+                  width={77}
+                  height={32}
+                />
+              </Link>
+            </div>
             <div className="mb-3 text-xs text-gray-400">
               BUMBEEZ SAS · RCS Thionville 929 391 787 · 80 rue de Dudelange,
               57330 Volmerange-les-Mines
