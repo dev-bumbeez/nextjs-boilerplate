@@ -76,13 +76,25 @@ export default function Home() {
             Téléchargez Bumbeez
           </h2>
           <p className="mx-auto mt-3 max-w-md text-gray-300">
-            Disponible sur iOS et Android. L&apos;inscription est gratuite, vous ne
-            payez qu&apos;au moment d&apos;une mission.
+            Disponible sur iOS, Android bientôt disponible. L&apos;inscription est
+            gratuite, vous ne payez qu&apos;au moment d&apos;une mission.
           </p>
-          <div className="mt-6 flex flex-wrap justify-center gap-3">
-            <span className="cursor-default rounded-xl bg-white/90 px-5 py-3 font-semibold text-gray-900 opacity-60">
-              App Store · Bientôt
-            </span>
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
+            <a
+              href="https://apps.apple.com/fr/app/bumbeez/id6745446166?itscg=30200&itsct=apps_box_link&mttnsubad=6745446166"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Télécharger Bumbeez sur l'App Store"
+              className="inline-block transition-transform hover:scale-105"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/partners/app-store-fr.svg"
+                alt="Télécharger dans l'App Store"
+                width={170}
+                height={54}
+              />
+            </a>
             <span className="cursor-default rounded-xl bg-white/90 px-5 py-3 font-semibold text-gray-900 opacity-60">
               Google Play · Bientôt
             </span>
