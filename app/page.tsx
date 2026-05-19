@@ -76,8 +76,8 @@ export default function Home() {
             Téléchargez Bumbeez
           </h2>
           <p className="mx-auto mt-3 max-w-md text-gray-300">
-            Disponible sur iOS, Android bientôt disponible. L&apos;inscription est
-            gratuite, vous ne payez qu&apos;au moment d&apos;une mission.
+            Disponible sur iOS et Android. L&apos;inscription est gratuite, vous
+            ne payez qu&apos;au moment d&apos;une mission.
           </p>
           <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
             <a
@@ -95,9 +95,21 @@ export default function Home() {
                 height={54}
               />
             </a>
-            <span className="cursor-default rounded-xl bg-white/90 px-5 py-3 font-semibold text-gray-900 opacity-60">
-              Google Play · Bientôt
-            </span>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.bumbeez.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Télécharger Bumbeez sur Google Play"
+              className="inline-block transition-transform hover:scale-105"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/partners/google-play-fr.png"
+                alt="Disponible sur Google Play"
+                width={182}
+                height={54}
+              />
+            </a>
           </div>
         </div>
       </section>
