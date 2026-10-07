@@ -1,3 +1,4 @@
+import { StoreButtons } from "@/components/StoreButtons";
 import Image from "next/image";
 
 export default function Home() {
@@ -79,38 +80,7 @@ export default function Home() {
             Disponible sur iOS et Android. L&apos;inscription est gratuite, vous
             ne payez qu&apos;au moment d&apos;une mission.
           </p>
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
-            <a
-              href="https://apps.apple.com/fr/app/bumbeez/id6745446166?itscg=30200&itsct=apps_box_link&mttnsubad=6745446166"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Télécharger Bumbeez sur l'App Store"
-              className="inline-block transition-transform hover:scale-105"
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/partners/app-store-fr.svg"
-                alt="Télécharger dans l'App Store"
-                width={170}
-                height={54}
-              />
-            </a>
-            <a
-              href="https://play.google.com/store/apps/details?id=com.bumbeez.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Télécharger Bumbeez sur Google Play"
-              className="inline-block transition-transform hover:scale-105"
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/partners/google-play-fr.png"
-                alt="Disponible sur Google Play"
-                width={182}
-                height={54}
-              />
-            </a>
-          </div>
+          <StoreButtons className="mt-6" />
         </div>
       </section>
     </>

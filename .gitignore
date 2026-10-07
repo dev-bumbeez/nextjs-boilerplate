@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Le gabarit des variables est de la documentation : il doit être suivi.
+!.env.example
